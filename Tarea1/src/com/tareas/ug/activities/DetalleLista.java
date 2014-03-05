@@ -1,4 +1,4 @@
-package com.tareas.ug;
+package com.tareas.ug.activities;
 
 import android.app.Activity;
 

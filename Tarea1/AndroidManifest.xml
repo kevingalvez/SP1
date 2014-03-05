@@ -4,6 +4,9 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
@@ -12,9 +15,9 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         <activity
-            android:name="com.tareas.ug.MainActivity"
+            android:name="com.tareas.ug.activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +26,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tareas.ug.DetalleLista"
+            android:name="com.tareas.ug.activities.DetalleLista"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.tareas.ug.Detalles"
+            android:name="com.tareas.ug.activities.Detalles"
             android:label="@string/title_activity_detalles" >
+        </activity>
+        <activity
+            android:name="com.tareas.ug.activities.Activity_detalles_images"
+            android:label="@string/title_activity_activity_detalles_images" >
         </activity>
     </application>
 
